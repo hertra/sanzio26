@@ -6,9 +6,9 @@ import { ConvexProvider } from 'convex/react'
 import { routeTree } from './routeTree.gen'
 
 export function getRouter() {
-  const CONVEX_URL = (import.meta as any).env.VITE_CONVEX_URL!
-  if (!CONVEX_URL) {
-    console.error('missing envar CONVEX_URL')
+  const CONVEX_URL = (import.meta as any).env.VITE_CONVEX_URL || 'https://dummy.convex.cloud'
+  if (!CONVEX_URL || CONVEX_URL === 'https://dummy.convex.cloud') {
+    console.warn('VITE_CONVEX_URL is missing. App will run in static mode.')
   }
   const convexQueryClient = new ConvexQueryClient(CONVEX_URL)
 
