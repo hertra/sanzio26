@@ -1,0 +1,26 @@
+
+> build
+> vite build && tsc --noEmit
+
+vite v7.3.1 building client environment for production...
+transforming...
+✓ 269 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/client/assets/app-sfl60zwj.css    22.60 kB │ gzip:   4.84 kB
+dist/client/assets/index-D4cpRRdy.js   24.68 kB │ gzip:   5.14 kB
+dist/client/assets/main-B20ZVivw.js   419.66 kB │ gzip: 129.40 kB
+✓ built in 2.32s
+vite v7.3.1 building ssr environment for production...
+transforming...
+"createRequestHandler", "defineHandlerCallback", "transformPipeableStreamWithRouter" and "transformReadableStreamWithRouter" are imported from external module "@tanstack/router-core/ssr/server" but never used in "node_modules/@tanstack/start-server-core/dist/esm/index.js".
+"RawStream" is imported from external module "@tanstack/router-core" but never used in "node_modules/@tanstack/start-client-core/dist/esm/index.js".
+"hydrate" and "json" are imported from external module "@tanstack/router-core/ssr/client" but never used in "node_modules/@tanstack/start-client-core/dist/esm/index.js".
+✓ 44 modules transformed.
+rendering chunks...
+dist/server/assets/start-HYkvq4Ni.js                        0.06 kB
+dist/server/assets/_tanstack-start-manifest_v-BjigMj21.js   0.41 kB
+dist/server/assets/router-D6-IzUql.js                       3.43 kB
+dist/server/assets/index-BoqnWKVe.js                       33.31 kB
+dist/server/server.js                                      37.75 kB
+✓ built in 323ms

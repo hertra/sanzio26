@@ -1,0 +1,13 @@
+CLAUDE.md
+README.md
+convex/
+dist/
+eslint.config.mjs
+node_modules/
+output.txt
+package-lock.json
+package.json
+public/
+src/
+tsconfig.json
+vite.config.ts

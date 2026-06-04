@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import tsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 import viteReact from '@vitejs/plugin-react'
-import { vercelAdapter } from '@tanstack/start-adapter-vercel'
+// import { vercelAdapter } from '@tanstack/start-adapter-vercel'
 
 export default defineConfig({
   server: {
@@ -15,9 +15,7 @@ export default defineConfig({
     tsConfigPaths({
       projects: ['./tsconfig.json'],
     }),
-    tanstackStart({
-      adapter: vercelAdapter(),
-    }),
+    tanstackStart(),
     viteReact(),
   ],
 })
