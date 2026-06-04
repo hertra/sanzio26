@@ -18,4 +18,7 @@ export default defineConfig({
     tanstackStart(),
     viteReact(),
   ],
+  ssr: {
+    noExternal: ['@convex-dev/auth', '@auth/core', 'whatwg-encoding', 'iconv-lite'],
+  },
 })
