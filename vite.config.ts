@@ -15,10 +15,14 @@ export default defineConfig({
     tsConfigPaths({
       projects: ['./tsconfig.json'],
     }),
-    tanstackStart(),
+    tanstackStart({
+      server: {
+        preset: 'vercel',
+      },
+    }),
     viteReact(),
   ],
   ssr: {
-    noExternal: ['@convex-dev/auth', '@auth/core', 'whatwg-encoding', 'iconv-lite'],
+    noExternal: ['@convex-dev/auth', '@auth/core', 'whatwg-encoding', 'iconv-lite', 'cheerio', 'encoding-sniffer'],
   },
 })
